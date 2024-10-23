@@ -59,17 +59,35 @@ const MobileFooter: React.FC = () => {
           showLabels
           value={value}
           onChange={(event, newValue) => handleNavigation(newValue)}
+          sx={{ bgcolor: "#00740AFF" }}
         >
-          <BottomNavigationAction label="ホーム" icon={<Home />} />
-          <BottomNavigationAction label="活動履歴" icon={<History />} />
-          <BottomNavigationAction label="MAP" icon={<Map />} />
-          <BottomNavigationAction label="営業資料" icon={<FileCopy />} />
+          <BottomNavigationAction
+            label="ホーム"
+            icon={<Home />}
+            sx={{ color: "white" }} // アイコンの色を白に設定
+          />
+          <BottomNavigationAction
+            label="活動履歴"
+            icon={<History />}
+            sx={{ color: "white" }} // アイコンの色を白に設定
+          />
+          <BottomNavigationAction
+            label="MAP"
+            icon={<Map />}
+            sx={{ color: "white" }} // アイコンの色を白に設定
+          />
+          <BottomNavigationAction
+            label="営業資料"
+            icon={<FileCopy />}
+            sx={{ color: "white" }}
+          />
 
           {/* お弁当メニュー */}
           <BottomNavigationAction
             label="その他"
-            icon={<MoreVert />} // 3点リーダーアイコン
+            icon={<MoreVert />}
             onClick={handleOpenMenu} // クリックでメニューを展開
+            sx={{ color: "white" }}
           />
         </BottomNavigation>
       </Paper>
@@ -86,13 +104,13 @@ const MobileFooter: React.FC = () => {
         }}
       >
         <MenuItem onClick={() => handleMenuItemClick("/producer-master")}>
-          <Person sx={{ mr: 1 }} /> 生産者マスタ
+          <Person sx={{ mr: 1, color: "black" }} /> 生産者マスタ
         </MenuItem>
         <MenuItem onClick={() => handleMenuItemClick("/performance")}>
-          <BarChart sx={{ mr: 1 }} /> 実績
+          <BarChart sx={{ mr: 1, color: "black" }} /> 実績
         </MenuItem>
         <MenuItem onClick={() => handleMenuItemClick("/chart")}>
-          <PieChart sx={{ mr: 1 }} /> 生産者カルテ
+          <PieChart sx={{ mr: 1, color: "black" }} /> 生産者カルテ
         </MenuItem>
       </Menu>
     </>

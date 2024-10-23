@@ -92,7 +92,11 @@ const ActivityHistory: React.FC = () => {
       </Box>
       {/* 検索フォームとリスト */}
       <Box>
-        <Typography variant="h6" sx={{ color: "#00796b", fontSize: "1.1rem" }}>
+        <Typography
+          variant="h6"
+          align="center"
+          sx={{ color: "#00796b", fontSize: "1.1rem" }}
+        >
           検索・フィルタリング
         </Typography>
         <Divider sx={{ my: 1 }} />

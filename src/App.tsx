@@ -50,7 +50,7 @@ const App: React.FC = () => {
           <Route path="map" element={<MapPage />} />
           <Route path="performance" element={<PerformancePage />} />
           <Route path="activity-history" element={<ActivityPage />} />
-          <Route path="activity/:id" element={<ActivityDetail />} />
+          <Route path="/activities/:id" element={<ActivityDetail />} />
           <Route
             path="/announcements/create"
             element={<AnnouncementCreatePage />}

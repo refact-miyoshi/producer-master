@@ -1,5 +1,6 @@
 import React from "react";
 import { List, ListItem, ListItemText, Typography } from "@mui/material";
+import { Link } from "react-router-dom"; // Linkをインポート
 
 // Activity インターフェースの定義
 interface Activity {
@@ -28,6 +29,8 @@ const ActivityList: React.FC<ActivityListProps> = ({ activities }) => {
                 borderRadius: "8px",
                 mb: 2,
               }}
+              component={Link} // Linkコンポーネントとして扱う
+              to={`/activities/${activity.id}`} // 詳細ページへのリンク
             >
               <ListItemText
                 primary={`[${activity.date}] ${activity.name} - ${activity.method}`}

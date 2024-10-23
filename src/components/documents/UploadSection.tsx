@@ -37,12 +37,12 @@ const UploadSection: React.FC<UploadSectionProps> = ({ onUploadSuccess }) => {
   };
 
   return (
-    <Paper sx={{ p: 2, mb: 4 }}>
+    <Paper sx={{ p: 1, mb: 3 }}>
       <Box
         sx={{
           display: "flex",
           flexDirection: { xs: "column", sm: "row" }, // スマホでは縦並び、PCでは横並び
-          gap: 2,
+          gap: 1,
           alignItems: "center",
         }}
       >

@@ -64,7 +64,7 @@ const MobileTopbar: React.FC = () => {
   const isHome = location.pathname === "/";
 
   return (
-    <AppBar position="fixed" sx={{ bgcolor: "#e0e0e0", color: "white" }}>
+    <AppBar position="fixed" sx={{ bgcolor: "#00740AFF", color: "white" }}>
       <Toolbar sx={{ position: "relative" }}>
         {/* ホームでは画像、他のページではページ名を表示 */}
         <Box
@@ -72,7 +72,7 @@ const MobileTopbar: React.FC = () => {
             margin: "0 auto",
             display: "flex",
             alignItems: "center",
-            color: "#ffffff",
+            color: "#FFFFFFFF",
           }}
         >
           {isHome ? (
